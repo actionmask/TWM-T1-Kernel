@@ -1,0 +1,28 @@
+
+menuconfig QCI_DEVICES
+	tristate "QCI devices support"
+	help
+	  QCI devices support.
+
+if QCI_DEVICES
+
+config QCI_FINPOINT
+	tristate "QCI FINPOINT"
+			
+config QCI_VIBRATOR
+	tristate "QCI VIBRATOR"
+				
+config QCI_AUDIO_DEVICE
+	tristate "QCI AUDIO DEVICE"
+				
+config QCI_SYS
+	tristate "QCI SYS Driver"
+
+config QCI_WLAN_POWER
+    tristate "QCI WLAN Power Device"				
+	default y
+
+config QCI_PMIC_RPC
+	tristate "QCI PMIC RPC"
+
+endif # QCI_DEVICES
